@@ -1,40 +1,40 @@
-import { HeaderProps } from "../utils/types"
+import { SetShowMenu } from "../utils/types"
 
-function Menu({ setShowMenu }: HeaderProps) {
+function Menu({ setShowMenu }: { setShowMenu: SetShowMenu }) {
 	function handleLinkClick() {
 		setShowMenu(false)
 	}
 
 	return (
-	
+		<>
 			<ul className='menu'>
 				<li>
 					<a href='/home' onClick={() => handleLinkClick()}>
-						home &raquo;
+						Home
 					</a>
 				</li>
-                <li>
+				<li>
 					<a href='/events' onClick={() => handleLinkClick()}>
-						events &raquo;
+						Events
 					</a>
 				</li>
-                <li>
+				<li>
 					<a href='/gallery' onClick={() => handleLinkClick()}>
-						gallery &raquo;
+						Gallery
 					</a>
 				</li>
-                <li>
+				<li>
 					<a href='/forum' onClick={() => handleLinkClick()}>
-						forum &raquo;
+						Forum
 					</a>
 				</li>
-                <li>
+				<li>
 					<a href='/links' onClick={() => handleLinkClick()}>
-						links &raquo;
+						Links
 					</a>
 				</li>
 			</ul>
-
+		</>
 	)
 }
 

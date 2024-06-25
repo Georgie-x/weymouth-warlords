@@ -1,5 +1,8 @@
 export type HeaderProps = {
-    showMenu: boolean;
-    setShowMenu: React.Dispatch<React.SetStateAction<boolean>>;
+    showMenu: ShowMenu
+    setShowMenu: SetShowMenu
   }
   
+export type ShowMenu = boolean
+
+export type SetShowMenu = React.Dispatch<React.SetStateAction<boolean>>
