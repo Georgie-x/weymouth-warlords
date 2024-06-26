@@ -1,16 +1,17 @@
-import { useState } from "react"
-import { Access, Content, Footer, Header } from "./layout-components"
+
+import { Access, Content, Footer, Header, Nav } from "./layout-components"
 
 function App() {
-	const [showMenu, setShowMenu] = useState<boolean>(false)
+	
 
 	return (
 		<>
 			<Access />
 
 			<div className='layout-container'>
-				<Header showMenu={showMenu} setShowMenu={setShowMenu}/>
-				<Content showMenu={showMenu} setShowMenu={setShowMenu}/>
+				<Header />
+				<Nav />
+				<Content />
 				<Footer />
 			</div>
 		</>

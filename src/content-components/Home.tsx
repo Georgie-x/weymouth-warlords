@@ -1,3 +1,6 @@
+import Contact from "./Contact"
+import Map from "./Map"
+
 function Home() {
 	return (
 		<>
@@ -13,20 +16,12 @@ function Home() {
 
 			<section className='club-details'>
 				<h2>Club Details</h2>
-				<h3>Address:</h3>
-				<p>
-					Wyke Regis Community Centre
-					<br /> Ryemead Lane
-					<br /> Weymouth
-					<br /> Dorset
-					<br /> DT4 9NS
-				</p>
-				<h3>Contact Email:</h3>
-				<p>Trev@WeymouthWarlords.co.uk</p>
+				<Contact />
+				<Map />
 			</section>
 
 			<section className='club-history'>
-                <h2>Club History</h2>
+				<h2>Club History</h2>
 				<p>The club has been running since ... la la la lots to say</p>
 			</section>
 		</>
