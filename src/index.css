@@ -37,17 +37,19 @@
 	box-sizing: border-box;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 960px) {
 	:root {
 		--font-size-large: 3rem;
 	}
 	h2 {
 		width: auto;
 	}
-	.content-container {
-		grid-template-rows: 1fr;
+	body .content-container {
 		grid-template-columns: 3fr 1fr;
 		max-width: 960px;
+	}
+	.flex-across{
+		flex-wrap: nowrap;
 	}
 }
 
@@ -64,7 +66,7 @@ body {
 	min-height: 100dvh;
 	min-height: 100vh;
 	width: 100%;
-	padding: var(--gap);
+	padding: var(--small-gap);
 	gap: var(--small-gap);
 }
 
@@ -76,7 +78,7 @@ body {
 	gap: var(--small-gap);
 	text-align: center;
 	width: 100%;
-	max-width: 1024px;
+	max-width: 960px;
 	margin: auto;
 	border: 2px solid;
 	border-image: var(--border-fade) 1;
@@ -96,21 +98,24 @@ body {
 	width: 100%;
 	height: 100%;
 	margin: auto;
-	display: flex;
-	padding: var(--gap) 0;
-	gap: var(--gap);
+	grid-template-columns: 1fr;
+	display: grid;
+	padding-bottom: var(--gap);
+	gap: var(--small-gap);
 }
 main {
 	display: flex;
+	min-height: fit-content;
 	flex-direction: column;
-	align-items: center;
-	gap: var(--gap);
-	margin: auto;
-
+	align-items:center;
+	justify-content: space-between;
+	gap: var(--small-gap);
+	
 }
 
 .flex-across {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 1rem;
 	justify-content: space-between;
 	align-items: start;
@@ -121,7 +126,7 @@ main {
 	flex-direction: column;
 	background-color: var(--primary-dark);
 	padding: var(--gap);
-	border-radius: var(--small-gap);
+	border-radius: var(--gap);
 	height: fit-content;
 	gap: var(--gap);
 	max-width: 640px;
@@ -151,7 +156,7 @@ section {
 	align-items: left;
 	border-radius: var(--small-gap);
 	width: 100%;
-	max-width: 640px;
+	max-width: 768px;
 	padding: var(--gap) var(--gap) var(--big-gap);
 	background-color: var(--secondary-medium);
 }
@@ -176,6 +181,10 @@ section {
 }
 .search-nav a:hover {
 	color: var(--primary-light);
+}
+
+img{
+	display:inline;
 }
 
 h1,
@@ -311,7 +320,7 @@ figure img {
 img {
 	margin: auto;
 	max-height: 600px;
-	max-width: 360px;
+	max-width: 320px;
 	display: inline;
 }
 
