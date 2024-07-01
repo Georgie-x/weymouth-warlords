@@ -1,8 +1,8 @@
 function Forum() {
 	return (
-		<>
-			<p>Forum</p>
-		</>
+		<section className="forum">
+			<h2>Forum</h2>
+		</section>
 	)
 }
 

@@ -4,9 +4,6 @@ function Nav() {
 		<nav>
 			<ul className='menu'>
 				<li>
-					<Link to='/home'>Home</Link>
-				</li>
-				<li>
 					<Link to='/events'>Events</Link>
 				</li>
 				<li>
