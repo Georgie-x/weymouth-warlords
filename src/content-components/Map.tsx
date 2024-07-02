@@ -12,6 +12,7 @@ const Map: React.FC = () => {
 				allowFullScreen={true}
 				loading='lazy'
 				referrerPolicy='no-referrer-when-downgrade'
+				title="Wyke Regis Community Club"
 			></iframe>
 		</>
 	)

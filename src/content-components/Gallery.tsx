@@ -16,13 +16,12 @@ function Gallery() {
 	return (
 		<section className='gallery'>
 			<h2>Gallery</h2>
-			<div className='flex'>
+			<div className='flex-across'>
 				<label htmlFor='gallery'>Choose an album: </label>
 				<select
 					className='select'
 					name='gallery'
 					id='gallery'
-					value={album}
 					onChange={handleChange}
 				>
 					<option value='demo'>Rad Pic Demo</option>
@@ -31,7 +30,7 @@ function Gallery() {
 			</div>
 			<div className='image-grid'>
 				{album.map((imagePath, index) => (
-					<img key={index} src={imagePath} alt={`Image ${index + 1}`} />
+					<img key={index} src={imagePath} alt="club photo" />
 				))}
 			</div>
 		</section>

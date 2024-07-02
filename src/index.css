@@ -1,6 +1,6 @@
 :root {
 	--primary-light: hsl(36, 100%, 76%);
-	--primary-medium: hsl(5, 58%, 41%);
+	--primary-medium: hsl(5, 50%, 50%);
 	--primary-dark: hsl(5, 50%, 25%);
 	--secondary-light: hsl(180, 85%, 90%);
 	--secondary-medium: hsl(180, 78%, 10%);
@@ -247,8 +247,13 @@ a:hover {
 img {
 	margin: auto;
 	max-height: 600px;
-	max-width: 320px;
+	max-width: 300px;
 	display: inline-block;
+}
+.gallery .flex-across{
+	justify-content: center;
+	align-items: center;
+	gap: 0;
 }
 
 .icon {
@@ -271,12 +276,12 @@ input {
 
 select{
 	background-color: var(--secondary-dark);
-	height: 1.4rem;
-	width: 30ch;
-	padding: var(--gap);
+	max-width: 30ch;
+	padding: var(--mini-gap);
 	border: 2px solid var(--primary-medium);
 	border-radius: 0.25rem;
-	color: red;
+	color: var(--primary-medium);
+	font-size: var(--font-size-small);
 }
 
 .gallery label{

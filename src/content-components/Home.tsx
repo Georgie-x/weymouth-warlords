@@ -1,5 +1,6 @@
 import Contact from "./Contact"
 import Map from "./Map"
+import club from "../assets/wwclub1.jpeg"
 
 function Home() {
 	return (
@@ -7,7 +8,7 @@ function Home() {
 			<section className='about-us'>
 				<h2>About Us</h2>
 				<div className='flex-across'>
-					<img src='/assets/wwclub1.jpeg'></img>
+					<img src={club}></img>
 					<p>
 						Greetings! We are a table-top gaming club based in Weymouth, Dorset. We play Necromunda,
 						Saga, Oathmark, Stargrave, Frostgrave, Bolt Action, Chain of Command and more! We meet
