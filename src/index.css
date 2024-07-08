@@ -46,7 +46,6 @@
 	header h1 {
 		width: fit-content;
 		padding: var(--gap) 0;
-
 	}
 
 	body .content-container {
@@ -65,6 +64,8 @@ body {
 	height: 100vh;
 	line-height: 1.8;
 	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
 }
 
 .layout-container {
@@ -91,8 +92,8 @@ body {
 	border-image: var(--border-fade) 1;
 }
 
-.header-link{
-	display:flex;
+.header-link {
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -122,7 +123,7 @@ body {
 
 main {
 	display: flex;
-	min-height: min-content;
+	height: 100%;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
@@ -170,7 +171,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	gap: var(--small-gap) 0;
-
+	flex: 1;
 	border-radius: var(--small-gap);
 	width: 100%;
 	max-width: 768px;
@@ -182,7 +183,8 @@ section {
 
 h1,
 h2,
-h3, header{
+h3,
+header {
 	color: var(--primary-medium);
 	line-height: 1.2;
 }
@@ -238,7 +240,6 @@ a {
 	color: var(--primary-light);
 	text-decoration: none;
 	display: inline;
-
 }
 a:hover {
 	color: var(--secondary-light);
@@ -250,7 +251,7 @@ img {
 	max-width: 300px;
 	display: inline-block;
 }
-.gallery .flex-across{
+.gallery .flex-across {
 	justify-content: center;
 	align-items: center;
 	gap: 0;
@@ -274,21 +275,21 @@ input {
 	border-radius: 0.25rem;
 }
 
-select{
+select {
 	background-color: var(--secondary-dark);
 	max-width: 30ch;
-	padding: var(--mini-gap);
+
 	border: 2px solid var(--primary-medium);
 	border-radius: 0.25rem;
 	color: var(--primary-medium);
 	font-size: var(--font-size-small);
 }
 
-.gallery label{
-	width:16ch;
+.gallery label {
+	width: 16ch;
 }
 
-.image-grid{
+.image-grid {
 	padding: var(--gap);
 	gap: var(--gap);
 	display: flex;
