@@ -60,12 +60,8 @@
 /* LAYOUT */
 
 body {
-	height: 100dvh;
-	height: 100vh;
 	line-height: 1.8;
 	overflow-y: scroll;
-	display: flex;
-	flex-direction: column;
 }
 
 .layout-container {
@@ -73,7 +69,7 @@ body {
 	flex-direction: column;
 	min-height: 100dvh;
 	min-height: 100vh;
-	width: 100%;
+	width: calc(100% - 2 * var(--small-gap));
 	padding: var(--small-gap);
 	gap: var(--small-gap);
 }
@@ -119,11 +115,13 @@ body {
 	display: grid;
 	padding-bottom: var(--gap);
 	gap: var(--small-gap);
+	flex: 1;
 }
 
 main {
 	display: flex;
 	height: 100%;
+	
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
@@ -290,7 +288,7 @@ select {
 }
 
 .image-grid {
-	padding: var(--gap);
+	padding: var(--gap) 0;
 	gap: var(--gap);
 	display: flex;
 	flex-direction: column;

@@ -4,13 +4,13 @@ function Nav() {
 		<nav>
 			<ul className='menu'>
 				<li>
-					<Link to='/events'>Events</Link>
-				</li>
-				<li>
-					<Link to='/gallery'>Gallery</Link>
+					<Link to='/news'>News</Link>
 				</li>
 				<li>
 					<Link to='/forum'>Forum</Link>
+				</li>
+				<li>
+					<Link to='/gallery'>Gallery</Link>
 				</li>
 				<li>
 					<Link to='/links'>Links</Link>

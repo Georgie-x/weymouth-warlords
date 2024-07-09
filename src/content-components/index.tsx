@@ -1,4 +1,4 @@
-import Events from "./Events"
+import News from "./News"
 import Forum from "./Forum"
 import Home from "./Home"
 import Gallery from "./Gallery"
@@ -7,5 +7,6 @@ import Message from "./Message"
 import ErrorPage from "./ErrorPage"
 import Map from "./Map"
 import Contact from "./Contact"
+import Feedback from "./Feedback"
 
-export {Events, Forum, Home, Gallery, Links, Message, ErrorPage, Map, Contact}
+export { News, Forum, Home, Gallery, Links, Message, ErrorPage, Map, Contact, Feedback }
