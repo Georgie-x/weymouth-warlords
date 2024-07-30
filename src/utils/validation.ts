@@ -11,6 +11,6 @@ export const validateUsername = (username: string): boolean => {
 }
 
 export const validatePassword = (password: string): boolean => {
-    const minLength = 6
+    const minLength = 8
     return password.length >= minLength
 }
