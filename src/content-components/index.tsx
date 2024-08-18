@@ -8,6 +8,7 @@ import ErrorPage from "./ErrorPage"
 import Map from "./Map"
 import Contact from "./Contact"
 import Feedback from "./Feedback"
+import MessageInput from "./Message-input"
 
 
-export { News, Forum, Home, Gallery, Links, Messages, ErrorPage, Map, Contact, Feedback}
+export { News, Forum, Home, Gallery, Links, Messages, ErrorPage, Map, Contact, Feedback, MessageInput}
