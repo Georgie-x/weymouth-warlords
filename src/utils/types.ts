@@ -12,3 +12,9 @@ export type DemoTable = {
   name: string,
   fave_warlord: string
 }
+
+export type SignUpData = {
+  email: string,
+  username: string,
+  password:string
+}

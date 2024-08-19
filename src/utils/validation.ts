@@ -4,7 +4,7 @@ export const validateEmail = (email: string): boolean => {
 }
 
 export const validateUsername = (username: string): boolean => {
-    const minLength = 3
+    const minLength = 2
     const maxLength = 20
     const usernameRegex = /^[a-zA-Z0-9_]+$/
     return username.length >= minLength && username.length <= maxLength && usernameRegex.test(username)
