@@ -15,6 +15,5 @@ export type DemoTable = {
 
 export type SignUpData = {
   email: string,
-  username: string,
   password:string
 }
