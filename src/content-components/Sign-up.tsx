@@ -41,18 +41,18 @@ function SignUp() {
 		e.preventDefault()
 
 		try {
-			const { data, error } = await supabase.auth.signUp({
-				email: formData.email,
-				password: formData.password,
-			})
+			const { data, error } = await supabase.auth.signInWithPassword({
+				email: 'example@email.com',
+				password: 'example-password',
+			  })
 
 			if (error) {
 				setMessage(error.message)
 			} else {
 				console.log("Sign up successful:", data)
 			}
-		} catch {
-			setMessage(error.message)
+		} catch (error) {
+			setMessage("error has occurred")
 		}
 	}
 
@@ -77,7 +77,7 @@ function SignUp() {
 					value={formData.username}
 					onBlur={handleUsername}
 				/>
-				<label htmlFor='username'>Password: </label>
+				<label htmlFor='password'>Password: </label>
 				<input
 					type='password'
 					id='password'
