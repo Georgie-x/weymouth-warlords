@@ -12,7 +12,7 @@ function Home() {
 					<p>
 						Greetings! We are a table-top gaming club based in Weymouth, Dorset. We play Necromunda,
 						Saga, Oathmark, Stargrave, Frostgrave, Bolt Action, Chain of Command and more! We meet
-						Sundays midday at Wyke Regis Community Centre, session costs £5.00, Everyone welcome!
+						Wednesdays from 6pm at Wyke Regis Community Centre, Everyone welcome!
 					</p>
 				</div>
 			</section>
