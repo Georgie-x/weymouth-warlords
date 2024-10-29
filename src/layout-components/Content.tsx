@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom"
 import { ErrorPage, News, Forum, Home, Gallery, Links } from "../content-components"
-import { Aside, Login } from "./index"
+import { Login } from "./index"
 import Profile from "../content-components/Profile" // Adjust the path as needed
 import { useUser } from "../contexts/User-context"
 
@@ -22,7 +22,6 @@ function Content() {
 					<Route path='/*' element={<ErrorPage />} />
 				</Routes>
 			</main>
-			<Aside />
 		</div>
 	)
 }

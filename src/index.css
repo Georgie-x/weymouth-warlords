@@ -61,7 +61,7 @@
 	}
 
 	body .content-container {
-		grid-template-columns: 3fr 1fr;
+		
 		max-width: 960px;
 	}
 	section .flex-across {
@@ -148,21 +148,6 @@ main {
 	align-items: start;
 }
 
-.aside {
-	display: flex;
-	flex-direction: column;
-	background-color: var(--primary-dark);
-	padding: var(--gap);
-	border-radius: var(--small-gap);
-	height: fit-content;
-	gap: var(--gap);
-	max-width: 640px;
-	margin: 0 auto;
-}
-
-.aside h2 {
-	color: white;
-}
 
 .footer-container {
 	display: flex;

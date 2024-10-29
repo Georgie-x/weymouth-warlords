@@ -11,7 +11,7 @@ function Contact() {
 			</p>
 			<br />
 			<h3>Contact Email:</h3>
-			<p>Trev@WeymouthWarlords.co.uk</p>
+			<p>Horobin815@sky.com</p>
 		</div>
 	)
 }
