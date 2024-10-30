@@ -10,8 +10,8 @@ function Contact() {
 				<br /> DT4 9NS
 			</p>
 			<br />
-			<h3>Contact Email:</h3>
-			<p>Horobin815@sky.com</p>
+			<h3>Contact:</h3>
+			<p>Email Trev at <a href="mailto:Horobin815@sky.com">Horobin815@sky.com</a></p>
 		</div>
 	)
 }

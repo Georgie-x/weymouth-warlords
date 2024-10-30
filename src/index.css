@@ -26,13 +26,13 @@
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.demoTab{
+.demoTab {
 	background-color: coral;
 	width: 100%;
 	height: 30vh;
 }
 
-.messages{
+.messages {
 	background-color: aqua;
 	width: 100%;
 	height: 50vh;
@@ -61,11 +61,7 @@
 	}
 
 	body .content-container {
-		
 		max-width: 960px;
-	}
-	section .flex-across {
-		flex-wrap: nowrap;
 	}
 }
 
@@ -133,11 +129,13 @@ body {
 main {
 	display: flex;
 	height: 100%;
-	
+	width: 100%;
+	max-width: 948px;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
 	gap: var(--small-gap);
+	margin: auto;
 }
 
 .flex-across {
@@ -146,8 +144,8 @@ main {
 	gap: 1rem;
 	justify-content: space-between;
 	align-items: start;
+	max-width: 85ch;
 }
-
 
 .footer-container {
 	display: flex;
@@ -162,6 +160,15 @@ main {
 	border-image: var(--border-fade) 1;
 }
 
+.flex-across {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: var(--gap);
+}
+
 section {
 	display: flex;
 	flex-direction: column;
@@ -169,9 +176,10 @@ section {
 	flex: 1;
 	border-radius: var(--small-gap);
 	width: 100%;
-	max-width: 768px;
+	max-width: 900px;
 	padding: var(--gap) var(--gap) var(--big-gap);
 	background-color: var(--secondary-medium);
+	align-items: center;
 }
 
 /* FONTS */
@@ -196,13 +204,19 @@ h2 {
 	font-weight: 600;
 	width: 100%;
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-	padding-bottom: var(--small-gap);
+	padding-bottom: var(--gap);
+	text-align: center;
 }
 h3 {
 	font-size: var(--font-size-small);
 	font-weight: 400;
 	color: var(--primary-light);
 	padding-bottom: var(--small-gap);
+}
+
+
+p {
+	max-width: 85ch;
 }
 
 button {
@@ -217,6 +231,10 @@ button {
 	justify-content: center;
 	align-items: center;
 	align-self: end;
+}
+
+figcaption{
+	text-align: center;
 }
 
 .menu-button {
@@ -242,8 +260,8 @@ a:hover {
 
 img {
 	margin: auto;
-	max-height: 600px;
-	max-width: 300px;
+	max-height: 400px;
+	width: 300px;
 	display: inline-block;
 }
 .gallery .flex-across {
@@ -280,6 +298,7 @@ select {
 	color: var(--primary-medium);
 	font-size: var(--font-size-small);
 }
+
 
 .gallery label {
 	width: 16ch;

@@ -2,6 +2,7 @@ import Contact from "./Contact"
 import Map from "./Map"
 import club from "../assets/wwclub1.jpeg"
 
+
 function Home() {
 	return (
 		<>
@@ -14,13 +15,16 @@ function Home() {
 					currently played are: Frostgrave, Stargrave, Necromunda, Saga, Barons War, Chain of
 					Command, Battlegroup, Bloodbowl, Gaslands and more.
 				</p>
-				<img src={club}></img>
-				<br/>
+				
+				<div className='flex-across'>
+					<figure><img src={club}></img></figure>
+					
+				</div>
+				<br />
 				<p>
 					We play each Wednesday from 6pm - 10pm at Wyke Community Centre, the club maintains an
 					open and inclusive atmosphere and are willing to try any game a visitor may bring. First
-					visit is free then £5 a week thereafter. Everyone welcome, please come along or get in
-					touch if you have any questions.
+					visit is free then £5 a week thereafter. Everyone welcome, please come along or <a href="mailto:Horobin815@sky.com">get in touch</a> if you have any questions.
 				</p>
 			</section>
 
