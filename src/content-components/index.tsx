@@ -1,4 +1,4 @@
-import News from "./News"
+import Events from "./Events"
 import Forum from "./Forum"
 import Home from "./Home"
 import Gallery from "./Gallery"
@@ -11,5 +11,17 @@ import Feedback from "./Feedback"
 import MessageInput from "./Message-input"
 import Login from "./Login"
 
-
-export { News, Forum, Home, Gallery, Links, Messages, ErrorPage, Map, Contact, Feedback, MessageInput, Login}
+export {
+	Events,
+	Forum,
+	Home,
+	Gallery,
+	Links,
+	Messages,
+	ErrorPage,
+	Map,
+	Contact,
+	Feedback,
+	MessageInput,
+	Login,
+}

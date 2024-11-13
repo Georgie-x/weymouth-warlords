@@ -1,6 +1,7 @@
 import { ChangeEvent, useState, useEffect } from "react";
 import { supabase } from "../supabase/supabase-client";
 import { demo, demo2 } from "../utils/db";
+import construct from "../assets/construc.png"
 
 type FileObject = {
     bucket_id: string;
@@ -61,9 +62,11 @@ function Gallery() {
     };
 
     return (
+ 
+            
         <section className='gallery'>
-            <h2>Gallery</h2>
-            <div className='flex-across'>
+            <h2>Gallery</h2><img className="construction" src={construct}></img>
+            {/* <div className='flex-across'>
                 <label htmlFor='gallery'>Choose an album: </label>
                 <select className='select' name='gallery' id='gallery' onChange={handleChange}>
                     <option value='demo'>Rad Pic Demo</option>
@@ -75,8 +78,9 @@ function Gallery() {
                 {album.map((imagePath, index) => (
                     <img key={index} src={imagePath} alt='gallery photo' />
                 ))}
-            </div>
+            </div> */}
         </section>
+
     );
 }
 

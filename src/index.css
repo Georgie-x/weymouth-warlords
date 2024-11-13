@@ -321,6 +321,12 @@ form {
 	width: 320px;
 	margin: auto;
 }
+
+.construction{
+	width: 100%;
+	background-color: var(--primary-dark);
+	
+}
 /* LOADING */
 
 .loader {

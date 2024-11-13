@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom"
-import { ErrorPage, News, Forum, Home, Gallery, Links } from "../content-components"
+import { ErrorPage, Events, Forum, Home, Gallery, Links } from "../content-components"
 import { Login } from "./index"
 import Profile from "../content-components/Profile" // Adjust the path as needed
 import { useUser } from "../contexts/User-context"
@@ -13,7 +13,7 @@ function Content() {
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/home' element={<Home />} />
-					<Route path='/news' element={<News />} />
+					<Route path='/events' element={<Events />} />
 					<Route path='/gallery' element={<Gallery />} />
 					<Route path='/forum' element={<Forum />} />
 					<Route path='/links' element={<Links />} />
