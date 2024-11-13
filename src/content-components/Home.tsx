@@ -9,9 +9,9 @@ function Home() {
 			<section className='about-us'>
 				<h2>About Us</h2>
 				<p>
-					Weymouth Warlords are a long standing gaming club based in Weymouth, Dorset. We play many
+					Weymouth Warlords is a an active gaming community seeking new members in Weymouth, Dorset. We play many
 					war games, tabletop games and role playing games. We have a large selection of mats and
-					terrain are available for members to use, wild west to sci-fi, 15mm to 28mm. Games
+					terrain available for members to use, wild west to sci-fi, 15mm to 28mm. Games
 					currently played are: Frostgrave, Stargrave, Necromunda, Saga, Barons War, Chain of
 					Command, Battlegroup, Bloodbowl, Gaslands and more.
 				</p>
@@ -22,9 +22,9 @@ function Home() {
 				</div>
 				<br />
 				<p>
-					We play each Wednesday from 6pm - 10pm at Wyke Community Centre, the club maintains an
+					We play each Wednesday from 6pm - 10pm at Wyke Regis Community Centre, the club maintains an
 					open and inclusive atmosphere and are willing to try any game a visitor may bring. First
-					visit is free then £5 a week thereafter. Everyone welcome, please come along or <a href="mailto:Horobin815@sky.com">get in touch</a> if you have any questions.
+					visit is free then £5 a week thereafter. Everyone welcome! Please come along or <a href="mailto:Horobin815@sky.com">get in touch</a> if you have any questions.
 				</p>
 			</section>
 
